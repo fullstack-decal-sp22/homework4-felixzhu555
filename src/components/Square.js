@@ -1,10 +1,11 @@
 import React from "react";
 import './styles/Square.css';
 
-function Square() {
+function Square(props) {
+
     return (
-        <button className="square">
-            {/* TODO */}
+        <button className="square" index={props.index} onClick={props.onClick}>
+            {props.value}
         </button>
     )
 }
